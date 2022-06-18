@@ -118,6 +118,13 @@ More mathematically PID is represented as
    1. [Single motor target tracking](https://www.youtube.com/watch?v=fusr9eTceEo).
    2. [Self-balancing PID-ball tracker](https://www.youtube.com/watch?v=57DbEEBF7sE)
 
+## Game Time 
+
+Now you can attempt the first task of the week! Goto Task-1 directory in Week-1, you'll find rest of the instructions there.
+
+All The Best!!
+
+
 ## References
 
 1. The series of videos by **MATLAB** will help to grasp the concept of PID in the best way possible. You can watch the entire playlist from [here](https://www.youtube.com/playlist?list=PLn8PRpmsu08pQBgjxYFXSsODEF3Jqmm-y).

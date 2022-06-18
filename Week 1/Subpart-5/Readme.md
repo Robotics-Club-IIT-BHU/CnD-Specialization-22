@@ -113,7 +113,7 @@ What LQR does is it tries to produce a K matrix such that this J cost is minimum
 
 Once we place the value of K into the dynamics, we get an optimal converging system which we can control and converge to any point that we like.
 
-Well, that's all from our side for this week. Don't forget to attempt challenge of the week. See you soon. Happy learning.
+Well, that's all from our side for this week. Now you can also attempt the second task of the week. Best of Luck!!
 
 
 <p align="center">
