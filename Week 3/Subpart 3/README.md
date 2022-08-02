@@ -18,5 +18,5 @@ In conclusion, we must say that it was a pleasure to be a part of creating this 
 
 We hope this is how you feel after this track of the camp.
 
-![I know RL](./rl-meme.jpg)
+![image](https://user-images.githubusercontent.com/77875542/182361793-a046ae64-5903-4d8a-bb93-c4a0dad3992e.png)
 
