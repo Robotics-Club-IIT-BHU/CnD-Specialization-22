@@ -10,9 +10,8 @@ If you know this transition probaility matrix, then you can easily use it to pla
 
 **2. Off Policy vs On policy** : An on-policy agent learns the value based on its current action(a) derived from the current policy, whereas its off-policy counter part learns it based on the action(a\*) obtained from another policy.
 
-<p align="center">
-   <img src="https://github.com/Robotics-Club-IIT-BHU/RoL-SummerCamp21/blob/main/Week-2/Subpart%201/assets/types-of-algos.png" alt="Types of RL algos"></img>
-</p>
+![image](https://user-images.githubusercontent.com/77875542/182362118-71b13eab-c1fb-4c38-bdc2-2016e4710d47.png)
+
 
 ### Q-Learning
 
@@ -26,22 +25,19 @@ Q-Learning is an off-policy model-free RL algorithm, which forms the building bl
 
 Methods in Q-Learning family learn an approximator Q_theta(s,a) for the optimal action-value function, Q*(s,a). Typically they use an objective function based on the [Bellman equation](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html). This optimization is almost always performed off-policy, which means that each update can use data collected at any point during training, regardless of how the agent was choosing to explore the environment when the data was obtained. The corresponding policy is obtained via the connection between Q* and pi*: the actions taken by the Q-learning agent are given by
 
-<p align="center">
-   <img src="https://github.com/Robotics-Club-IIT-BHU/RoL-SummerCamp21/blob/main/Week-2/Subpart%201/assets/q-update.png" alt="optimal policy"></img>
-</p>
+![image](https://user-images.githubusercontent.com/77875542/182362335-fa0844ae-636c-4e17-aaad-ebe46ce86dc0.png)
+
 
 ### DQN
 DQN(Deep Q-Network) is one of the most commonly used RL algorithms and uses the Q-update step to get to the optimal Action Value function. Since, the the number of states and state transitions are extremely large, even in simple environements we use a deep neural network as a function approximator in Deep Q-Network. This neural network learns a very good approximation of the actual Q-function by interacting with the environment and getting performing the Q update at every step as mentioned below:
 
-<p align="center">
-   <img src="https://github.com/Robotics-Club-IIT-BHU/RoL-SummerCamp21/blob/main/Week-2/Subpart%201/assets/q-learning.png" alt="q-update"></img>
-</p>
+![image](https://user-images.githubusercontent.com/77875542/182362291-cfe0a896-1b48-4ed4-8e51-dc6520d93414.png)
+
 
 Since we are using neural networks as approximators, and the target network is same as the learning network and is getting constatntly updated, this might lead to unstable learning at times, so DQN has some variants which tackle these problems by introducing the following improvements:
 * **Target Network** : Use a different target network, that gets updated less frequently as compared to the learning network, i.e. set the target network paramters equal to the learning network parameters every 100(say) steps. This is done in Double DQN. 
 * **Experience Replay** :  Experience Replay stores experiences including state transitions, rewards and actions, which are necessary data to perform Q learning, and makes mini-batches to update neural networks. This reduces correlations between experiences as they are sampled from the experience replay and increases learning speed.
 * **Clipping Rewards** : Clipping large rewards and mapping them to a normalized value between +1 and -1 has often lead to faster and more stable training.
 
-<p align="center">
-   <img src="https://github.com/Robotics-Club-IIT-BHU/RoL-SummerCamp21/blob/main/Week-2/Subpart%201/assets/5go13e.jpg" alt="meme"></img>
- </p>
+![image](https://user-images.githubusercontent.com/77875542/182362203-b20edaa1-ab84-493b-886f-045bb608faa2.png)
+
